@@ -1,0 +1,138 @@
+Docker Cheat-sheet for beginners 🐳
+
+🔧 Common Docker Commands
+
+1. Start Docker: 
+systemctl start docker # Linux 
+open -a Docker # macOS 
+
+2. Check Docker Version: 
+docker --version 
+
+📦 Working with Containers
+
+1. List Running Containers: 
+docker ps 
+
+2. List All Containers (Running + Stopped): 
+docker ps -a 
+
+3. Run a Container (starts and attaches): 
+docker run <image_name> 
+
+4. Run in Detached Mode: 
+docker run -d <image_name> 
+
+5. Run with Port Mapping: 
+docker run -p <host_port>:<container_port> <image_name> 
+
+6. Stop a Running Container: 
+docker stop <container_id> 
+
+7. Start a Stopped Container: 
+docker start <container_id> 
+
+8. Remove a Stopped Container: 
+docker rm <container_id> 
+
+📜 Images
+
+1. List Docker Images: 
+docker images 
+
+2. Pull an Image from Docker Hub: 
+docker pull <image_name> 
+
+3. Build an Image from Dockerfile: 
+docker build -t <image_name> . 
+
+4. Tag an Image: 
+docker tag <image_id> <new_image_name>:<tag> 
+
+5. Remove an Image: 
+docker rmi <image_id> 
+
+🔄 Container Management
+
+1. View Logs of a Container: 
+docker logs <container_id> 
+
+2. Access a Running Container (Interactive Shell): 
+docker exec -it <container_id> /bin/bash 
+
+3. Copy Files from Container to Host: 
+docker cp <container_id>:<path_inside_container> <host_path> 
+
+🏗 Docker Networks
+
+1. List Networks: 
+docker network ls 
+
+2. Create a Network: 
+docker network create <network_name> 
+
+3. Connect a Running Container to a Network: 
+docker network connect <network_name> <container_id> 
+
+🐳 Docker Compose
+
+1. Start Services in Detached Mode: 
+docker-compose up -d 
+
+2. Stop Services: 
+docker-compose down 
+
+3. Build and Start Containers: 
+docker-compose up --build 
+
+📊 Inspecting and Monitoring
+
+1. Inspect Container Details: 
+docker inspect <container_id> 
+
+2. Display Resource Usage (CPU, Memory): 
+docker stats 
+
+🛠 Volumes
+
+1. List Volumes: 
+docker volume ls 
+
+2. Create a Volume: 
+docker volume create <volume_name> 
+
+3. Mount a Volume (during docker run): 
+docker run -v <volume_name>:<path_inside_container> <image_name> 
+
+💡 Pro Tip: Use docker system prune to remove unused containers, networks, and images.
+
+Feel free to save or bookmark this cheat sheet for quick reference!
+likeinsightfulcelebrate
+94
+6 comments
+8 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Skip to LinkedIn News
+Feed post number 4
+Ed’s profile photo
+Ed Donner loves this
+
+
+View Sanjeev Kumar’s  graphic link
+Sanjeev KumarSanjeev Kumar
+ • 2nd2nd
+Director @ RBC | FRM, Risk Management, Technology TransformationDirector @ RBC | FRM, Risk Management, Technology Transformation
+1d •  1 day ago • Visible to anyone on or off LinkedIn
+
+Follow
+Another fantastic course by Ed Donner. "The Complete Agentic AI Engineering Course (2025)" provides a solid overview of the current state of agentic AI and several popular frameworks.
+Activate to view larger image,
+
